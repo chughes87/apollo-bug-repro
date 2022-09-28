@@ -30,6 +30,7 @@ function DisplayLocationsA() {
 
   return (
     <>
+      <DisplayLocationsB />
       {data.locations.map(({ id, name, description, photo }) => (
         <div key={id}>
           <h3>{name}</h3>
@@ -72,7 +73,6 @@ export default function App() {
     <div>
       <h2>My first Apollo app 🚀</h2>
       <DisplayLocationsA />
-      <DisplayLocationsB />
     </div>
   );
 }
